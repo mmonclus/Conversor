@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Desafío Conversor</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0eaf5; /* Fondo azul claro */
+    }
+    .container {
+      display: grid;
+      grid-template-rows: auto 1fr; /* Primera fila para el título, segunda fila para el video */
+      gap: 20px; /* Espacio entre las filas */
+      text-align: center; /* Centro del contenido en el contenedor */
+    }
+    h1 {
+      grid-row: 1; /* Colocar el título en la primera fila */
+    }
+    video {
+      grid-row: 2; /* Colocar el video en la segunda fila */
+      width: 100%; /* El video ocupa todo el ancho disponible */
+      height: 100%; /* El video ocupa todo el alto disponible */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Desafío Conversor</h1>
+    <video controls>
+      <source src="media/conversor.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+  </div>
+</body>
+</html>
